@@ -11,11 +11,11 @@ Given the shift in consumers viewing habits and the proliferation of pirated str
 
 ### Outline
 1. Data collection/Processing
-	> I obtained 933 posts from the cordcutters subreddit and 634 posts from the piracy subreddit. The posts were dumped into a Data folder as json files.  I converted the json files into dataframes and concatenated the two subreddit dataframes. I then created a boolean column in which all cordcutter posts were assigned a 1 and all piracy posts were assigned a 0.  The 'title' and 'selftextxt' columns were cleaned using regex to remove any numbers, punctuation and notation and all text was made lower case.  
+	> I obtained 933 posts from the cordcutters subreddit and 634 posts from the piracy subreddit. The posts were dumped into a Data folder as json files.  I converted the json files into dataframes and concatenated the two subreddit dataframes. I then created a boolean column in which all cordcutter posts were assigned a 1 and all piracy posts were assigned a 0.  The 'title' and 'selftext' columns were cleaned using regex to remove any numbers, punctuation and notation and all text was made lower case.  
 2. EDA
-    	> I put the text through a count vectorizer since the models require all the inputs to be numeric. During vectorization, I also removed stop words and punctation 	by adding a custom list with 258 stop words to the parameters.  I then plotted the top 20 words in each subreddit and the top 20 overlapping words grouped by the 	sum of the terms in each subreddit.  I then conducted a hypothesis test to get a list of the statistically significant words that occur in both classes and, finally, I plotted the distributions of the highest frequency overlapping words.
+	> I put the text through a count vectorizer since the models require all the inputs to be numeric. During vectorization, I also removed stop words and punctation by adding a custom list with 258 stop words to the parameters.  I then plotted the top 20 words in each subreddit and the top 20 overlapping words grouped by the sum of the terms in each subreddit.  I then conducted a hypothesis test to get a list of the statistically significant words that occur in both classes and, finally, I plotted the distributions of the highest frequency overlapping words.
 3. Modeling
-	> I trained four classifiers to predict which subreddit a given post came from : Multinomial Naive Bayes, Logistic Regression, Decision Tree, and Random Forest. 	To compare model strength, I used 2 metrics: test score and ROC AUC:
+	> I trained four classifiers to predict which subreddit a given post came from : Multinomial Naive Bayes, Logistic Regression, Decision Tree, and Random Forest. To compare model strength, I used 2 metrics: test score and ROC AUC:
 
 
 ### Results
