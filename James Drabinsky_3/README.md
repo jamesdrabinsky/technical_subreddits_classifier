@@ -29,4 +29,4 @@ Given the shift in consumers viewing habits and the proliferation of pirated str
    
 
 4. Summary and Conclusions
-	> I chose the Logistic Regression Model because of its high test and ROC AUC score.  My analysis recognizes the intersecting words between the two subreddits and identifies the statistically significant words in both classes. This would benefit a SVoD company because using this data it can draw links between what 	cordcutters are watching and what is being pirated and adjust their decision-making accordingly.  
+	> I chose the Logistic Regression Model because of its high test and ROC AUC score.  My analysis recognizes the intersecting words between the two subreddits and identifies the statistically significant words in both classes. This would benefit a SVoD company because using this data it can draw links between what cordcutters are watching and what is being pirated and adjust their decision-making accordingly.  
